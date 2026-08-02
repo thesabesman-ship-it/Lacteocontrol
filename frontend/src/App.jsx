@@ -1,13 +1,14 @@
 import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <div
       style={{
         display: "flex",
+        minHeight: "100vh",
         backgroundColor: "#121212",
         color: "white",
-        minHeight: "100vh",
       }}
     >
       <Sidebar />
@@ -15,28 +16,9 @@ function App() {
       <div
         style={{
           flex: 1,
-          padding: "40px",
         }}
       >
-        <h1>Bienvenido a LácteoControl</h1>
-
-        <h2>👋 Hola, Duván</h2>
-
-        <p>
-          🤖 Duván IA está listo para ayudarte a controlar tu empresa láctea.
-        </p>
-
-        <button
-          style={{
-            padding: "12px 25px",
-            fontSize: "18px",
-            borderRadius: "10px",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          Iniciar sesión
-        </button>
+        <Dashboard />
       </div>
     </div>
   );
